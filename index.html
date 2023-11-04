@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Formulario con HTML5</title>
+</head>
+<body>
+    <div class="container-fluid p-5 ">
+      <div class="card fw-bold">
+        <div class="card-header">
+          <h2>Payment form examplo</h2>
+        </div>
+        <div class="card-body ">
+                                        <!-- ALERT -->
+
+          <div class="alert alert-danger" role="alert">Some fields are missing</div>
+                                        <!-- INFO card -->
+
+          <div class="row">
+            <div class="mb-3 col-6 ">
+              <label for="exampleFormControlInput1" class="form-label">Card #</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="xxxxxxxxxxxxxxxx">
+            </div>
+            <div class="mb-3 col-3">
+              <label for="exampleFormControlInput1" class="form-label">CVC #</label>
+               <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="0000">
+            </div>
+            <div class="col-3">
+              <label for="exampleFormControlInput1" class="form-label">Amount</label>
+              <div class="input-group mb-3">
+               <span class="input-group-text">$</span>
+               <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Amount">
+              </div>
+            </div>
+          </div>
+                                        <!-- INFO name -->
+                                        
+          <div class="row">
+            <div class="mb-3 col-6">
+              <label for="exampleFormControlInput1" class="form-label">First Name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" >
+            </div>
+            <div class="mb-3 col-6">
+              <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+          </div>
+                                        <!-- INFO city -->
+
+          <div class="row">
+            <div class="mb-3 col-6">
+              <label for="exampleFormControlInput1" class="form-label">City</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1">
+            </div>
+            <div class="col-3">
+              <label for="exampleFormControlInput1" class="form-label">State</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Pick a state</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+              <div class="mb-3 col-3">
+                <label for="exampleFormControlInput1" class="form-label">Postal Code</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" >
+              </div>
+          </div>
+                                    <!-- We accept - Message  -->
+
+          <div class="row">
+            <div class="col-6">
+              <label for="exampleFormControlInput1" class="form-label">We accept:</label>
+              <br>
+              <div class="mb-auto badge bg-secondary me-auto">
+                <div class="form-check form-check-inline  ">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label" for="inlineRadio1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARkAAAC0CAMAAACXO6ihAAAAdVBMVEX///8AAACmpqawsLDFxcXh4eH7+/saGhoJCQlTU1PW1tZeXl7IyMgNDQ34+Pja2tpERETPz8+urq7x8fE8PDwzMzOenp6YmJhWVlYTExO9vb0pKSlJSUliYmLm5uZ7e3uFhYWOjo4nJydwcHCZmZmBgYFoaGgHomQGAAAFGklEQVR4nO2d6XaqMBRGI4LW1kLROlGHcju8/yNebZUxH4MJhcC3f+FaEZMtHgLnYIRIcPTH1nAZ256Q4p9GZGvnvby23amOsJqnxfB4iTklvLgvbfemU7y6kZlV233pGKvJVcy27Z50jtmvmHXb/egg1kXMsu1edJJLqHlPvJ5txsPFekqYCM9m4ld7Rz4HHAzHWSxDCDvafmq7Yx0gPhn5Irxt7truVRdwH246NiI6gKy2e9UJohP1t5jeNpdtd6oTHG86ViI6fNzytw0ANw4ut63ppPxtA8B9vvp4oJk0NIOgGQTNIGgGQTMImkHQDIJmEDSDoBkEzSBoBkEzCJpByMy03aduMJGY8RziOF7eDElDMwiaQdAMgmYQNIOgGQTNIGgGQTMImkHQDIJmEDSDoBkEzSBoBkEzCJpB0AyCZhA0g6AZBM0gaAZBMwiaQdAMgmYQNIOgGQTNIGgGQTMImkHQDIJmEDSDoBkEzSBoBkEzCJpB0AwiNrOzyYVdzgyf4vllmjfDJ78uTGgGQDMImkHQDIJmEDSDoBkEzSBoBkEzCJpB0AyCZhA0g6AZBM0gaAZBMwiaQdAMgmYQNIPokxnXmwfW2rK9oqUsHH+xthZBYZsfemPmuEgsn/MWPkrbWPu4zesGLDp5pSdm7ISW68DH2Tb+U7bNalGwy16YkS+hOQ2Sbbx9eZsUfTDzLhvzhYNb3maLAo75ZpYFa64+e+VtRnP5fuuacR41omM5pMeCMZ/5+bU4xW1yEekOM8Ez2PmdHJQXRPLKPiJIrMSEkKqpZWasIEHOP0UxFRaK9NzyrzO/LnI9My7YrwobNTMV1nXeVVmY9ahmZn7f4AtZKYn50tWNFzUzga5+JFERUxJ965Cf89UxUxrt7mCrYkbnkte5QdeKwA0svg0mE5XQ+uv+VDKz1L789lpBjMhdBymhZEaIxWGmj+1X8dVuCZqXds6euQ2+OljoNfOR2b3BZr71mnnO7N5gM3rF5GZ75prRvoJ8JtCYa8bXbSazRLS5ZmwwwLt5T++fZiIyJyeaoZlSvtL7N9eM9gicuVVkrhntZ+1MgsVcM9pnepmLOIPNaL46yF5sG2zG0ivmO7P7mmasw1N9PnCKVAXNgSbbyXp3rt7u/NTXRg7DKkmB6mT3XsuMNGleiVkTZrTe7QxVzKjcIXeaUKPzvnQuk/xXWZVGQo3GZEb+hnQdMyqzzmaCMKz9qIskIfhX2duGZgJVkhlVoqPkx14rAt9/T1peiKFOaZnDaDSv8IXKuvcnVSI7Wa2BHkoTuIvS8pnc3bx7zJw/ZV6fRs5LN0qisFW1TQ6Drw6uHP8VDPoa+AuTq+DkYL4ZMTmhMe+P5W1eJKUzv28x38x5OiG/aklVfvjywwZXBPfCjBDj3LinVnYYdn7KvC6oE+yJmXOU3STlfPmyNk6YOLim79I2Eb0xc2bpB9YmDAO/oJp24gefYbheFLW5tuyRGb3QDIJmEDSDoBkEzSBoBkEzCJpB0AyCZhA0g6AZBM0gaAaRMPNwU6P8QGwviNJUu+i/2vPJ70ESJfne4nIUef5laEQlXQcR3jYf+HNKJvE3iUIdpcc+e0Jc0OUny0j3jSZcDcBJFFCcX4bxq9HsczxcwmRm6lJarr0quxf8BF3NFba94Fpao/cJ6D4Q1U9X+G+OQbGPYrLbwB8cGExq+vLRdm86RKZ6GhSaDI9ZflJn6y3oN5OT9F8chfACa8CM/dTh8h/WBp8sZ5eTVwAAAABJRU5ErkJggg==" alt="mastercard" style="width: 2rem;"></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                  <label class="form-check-label" for="inlineRadio2"><img src="https://png.pngitem.com/pimgs/s/13-130380_credit-card-icon-card-icon-hd-png-download.png" alt="visa" style="width: 2rem;"></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                  <label class="form-check-label" for="inlineRadio3"><img src="https://cdn.icon-icons.com/icons2/1176/PNG/512/diners-club_81985.png" alt="diners" style="width: 2rem;"></label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option3">
+                  <label class="form-check-label" for="inlineRadio4"><img src="https://cdn.icon-icons.com/icons2/1176/PNG/512/american-express_81996.png" alt="americanexpress"style="width: 2rem;"></label>
+               </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <label for="exampleFormControlInput1" class="form-label">Message</label>
+              <textarea class="form-control" aria-label="With textarea"></textarea>
+              <span id="passwordHelpInline" class="form-text"> Add any notes here.</span>    
+            </div>
+          </div>
+        </div>
+                                        <!-- Footer  -->
+
+        <div class="card-footer d-flex justify-content-end">
+          <button type="button" class="btn btn-secondary mx-2">Cancel</button>
+          <button type="button" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    </div>
+    
+</body>
+</html>
